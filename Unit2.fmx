@@ -1,0 +1,406 @@
+﻿object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 590
+  ClientWidth = 425
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 425.000000000000000000
+    Size.Height = 590.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      425s
+      590s
+      425s
+      590s
+      425s
+      590s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ToolBar2: TToolBar
+        Size.Width = 425.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object SpeedButton1: TSpeedButton
+          Action = ChangeTabAction1
+          Align = MostRight
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 345.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'addtoolbutton'
+        end
+      end
+      object ListBox1: TListBox
+        Position.X = 16.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 457.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnClick = ListBox1Click
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 221.000000000000000000
+        Viewport.Height = 453.000000000000000000
+        object ListBoxItem1: TListBoxItem
+          ItemData.Accessory = aMore
+          Size.Width = 221.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitembottomdetail'
+          TabOrder = 0
+          Text = #1047#1072#1087#1080#1089#1080
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ToolBar1: TToolBar
+        Size.Width = 425.000000000000000000
+        Size.Height = 47.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object SpeedButton4: TSpeedButton
+          Action = ChangeTabAction2
+          Align = MostLeft
+          Enabled = True
+          ImageIndex = -1
+          Size.Width = 80.000000000000000000
+          Size.Height = 47.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+        end
+      end
+      object Layout1: TLayout
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Position.X = 8.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 409.000000000000000000
+        Size.Height = 503.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object paDateTimeHeader: TPanel
+          Align = Top
+          Size.Width = 409.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object laDateTimeHeader: TLabel
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Size.Width = 399.000000000000000000
+            Size.Height = 65.000000000000000000
+            Size.PlatformDefault = False
+            Text = #1044#1072#1090#1072'/'#1042#1088#1077#1084#1103' '#1085#1072#1073#1083#1102#1076#1077#1085#1080#1103
+            TabOrder = 0
+          end
+        end
+        object loWaterValue: TLayout
+          Align = Top
+          Position.Y = 312.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 61.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          object laWaterValue: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 24.000000000000000000
+            TabOrder = 0
+          end
+        end
+        object loDateTimeValue: TLayout
+          Align = Top
+          Position.Y = 65.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 56.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          object laDateTimeValue: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 16.000000000000000000
+            TabOrder = 0
+          end
+        end
+        object paLengthHeader: TPanel
+          Align = Top
+          Position.Y = 121.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object laLengthHeader: TLabel
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Size.Width = 399.000000000000000000
+            Size.Height = 65.000000000000000000
+            Size.PlatformDefault = False
+            Text = #1044#1083#1080#1085#1072' '#1088#1086#1089#1090#1082#1072
+            TabOrder = 1
+          end
+        end
+        object loCommentValue: TLayout
+          Align = Top
+          Position.Y = 438.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 61.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object laCommentValue: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 24.000000000000000000
+            TabOrder = 0
+          end
+        end
+        object loLengthValue: TLayout
+          Align = Top
+          Position.Y = 186.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 61.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          object laLengthValue: TLabel
+            Position.X = 24.000000000000000000
+            Position.Y = 24.000000000000000000
+            TabOrder = 0
+          end
+        end
+        object paCommenHeader: TPanel
+          Align = Top
+          Position.Y = 373.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object laCommentHeader: TLabel
+            Align = Client
+            Margins.Left = 10.000000000000000000
+            Size.Width = 399.000000000000000000
+            Size.Height = 65.000000000000000000
+            Size.PlatformDefault = False
+            Text = #1050#1086#1084#1084#1077#1085#1090#1072#1088#1080#1081
+            TabOrder = 1
+          end
+        end
+        object paWaterHeader: TPanel
+          Align = Top
+          Position.Y = 247.000000000000000000
+          Size.Width = 409.000000000000000000
+          Size.Height = 65.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object laWaterHeader: TLabel
+            Position.X = 16.000000000000000000
+            Position.Y = 24.000000000000000000
+            Text = #1055#1086#1083#1080#1074
+            TabOrder = 1
+          end
+        end
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = #177
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object ToolBar3: TToolBar
+        Size.Width = 425.000000000000000000
+        Size.Height = 47.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Назад: TSpeedButton
+          Action = ChangeTabAction2
+          Align = MostLeft
+          Enabled = True
+          ImageIndex = -1
+          Size.Width = 80.000000000000000000
+          Size.Height = 47.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+        end
+        object SpeedButton2: TSpeedButton
+          Align = MostRight
+          Position.X = 345.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 47.000000000000000000
+          Size.PlatformDefault = False
+          Text = #1057#1086#1093#1088#1072#1085#1080#1090#1100
+          OnClick = SpeedButton2Click
+        end
+        object SpeedButton3: TSpeedButton
+          Action = ChangeTabAction2
+          Align = MostRight
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 265.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 47.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object ListBox2: TListBox
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Position.X = 8.000000000000000000
+        Position.Y = 56.000000000000000000
+        Size.Width = 409.000000000000000000
+        Size.Height = 497.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        AutoHide = False
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 389.000000000000000000
+        Viewport.Height = 477.000000000000000000
+        object lbghDateTime: TListBoxGroupHeader
+          TabOrder = 0
+          Text = #1044#1072#1090#1072' '#1080' '#1074#1088#1077#1084#1103
+        end
+        object TListBoxItem
+          Position.Y = 19.000000000000000000
+          Size.Width = 389.000000000000000000
+          Size.Height = 62.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object deDateNew: TDateEdit
+            Date = 44173.000000000000000000
+            Position.X = 64.000000000000000000
+            Position.Y = 24.000000000000000000
+            TabOrder = 0
+          end
+          object teTimeNew: TTimeEdit
+            Time = 0.738817569444444400
+            Position.X = 192.000000000000000000
+            Position.Y = 24.000000000000000000
+            TabOrder = 1
+          end
+        end
+        object lbghLenght: TListBoxGroupHeader
+          Position.Y = 81.000000000000000000
+          TabOrder = 2
+          Text = #1044#1083#1080#1085#1072' '#1088#1086#1089#1090#1082#1072
+        end
+        object lbiLengthNew: TListBoxItem
+          Position.Y = 100.000000000000000000
+          Size.Width = 389.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object sbLengthNew: TSpinBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 0
+            Cursor = crIBeam
+            Position.X = 64.000000000000000000
+            Position.Y = 8.000000000000000000
+          end
+        end
+        object lbghWater: TListBoxGroupHeader
+          Position.Y = 145.000000000000000000
+          TabOrder = 4
+          Text = #1055#1086#1083#1080#1074
+        end
+        object lbiWaterNew: TListBoxItem
+          Position.Y = 164.000000000000000000
+          Size.Width = 389.000000000000000000
+          Size.Height = 53.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          object swWaterNew: TSwitch
+            IsChecked = False
+            Position.X = 64.000000000000000000
+            Position.Y = 16.000000000000000000
+            TabOrder = 0
+          end
+        end
+        object lbghComment: TListBoxGroupHeader
+          Position.Y = 217.000000000000000000
+          TabOrder = 6
+          Text = #1050#1086#1084#1084#1077#1085#1090#1072#1088#1080#1081
+        end
+        object lbiCommentNew: TListBoxItem
+          Position.Y = 236.000000000000000000
+          Size.Width = 389.000000000000000000
+          Size.Height = 77.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+          object meCommentNew: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            TextSettings.WordWrap = True
+            Align = Client
+            Size.Width = 389.000000000000000000
+            Size.Height = 77.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Viewport.Width = 385.000000000000000000
+            Viewport.Height = 73.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 360
+    Top = 232
+    object ChangeTabAction1: TChangeTabAction
+      Category = 'Tab'
+      Tab = TabItem3
+    end
+    object ChangeTabAction2: TChangeTabAction
+      Category = 'Tab'
+      CustomText = #1053#1072#1079#1072#1076
+      Tab = TabItem1
+      ShortCut = 137
+    end
+    object ChangeTabAction3: TChangeTabAction
+      Category = 'Tab'
+      Tab = TabItem2
+    end
+  end
+end

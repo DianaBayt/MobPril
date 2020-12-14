@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.838,C:\Users\Диана Байтимирова\Documents\Embarcadero\Studio\Projects\Project2.dproj=D:\project 6\Project2.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.563,D:\project 6.1\Unit2.pas=D:\project 6\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.937,D:\project 6\Unit2.pas=D:\project 6.3\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.102,D:\project 62\Unit2.fmx=D:\project 6.1\Unit2.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.919,D:\project 62\Unit2.fmx=D:\project 6.3\Unit2.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.937,D:\project 6\Unit2.fmx=D:\project 6.3\Unit2.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.185,=C:\Users\Диана Байтимирова\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.257,C:\Users\Диана Байтимирова\Documents\Embarcadero\Studio\Projects\Unit2.pas=D:\project 6\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.563,D:\project 6.1\Unit2.fmx=D:\project 6\Unit2.fmx</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.919,D:\project 62\Unit2.pas=D:\project 6.3\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.102,D:\project 62\Unit2.pas=D:\project 6.1\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.257,C:\Users\Диана Байтимирова\Documents\Embarcadero\Studio\Projects\Unit2.fmx=D:\project 6\Unit2.fmx</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
